@@ -4,6 +4,7 @@ var app = angular.module('tsAppGuide', ['ngRoute']);
 
   
 app.config(function ($routeProvider) {
+
     $routeProvider.when('/', {
         templateUrl: 'views/main.html',
         controller: 'mainController'
@@ -110,6 +111,10 @@ app.config(function ($routeProvider) {
         redirectTo: '/'
       });
 
+  
+
+     // use the HTML5 History API
+//    $locationProvider.html5Mode(true);
 
 
 
@@ -122,8 +127,6 @@ app.controller('mainController', [function($scope) {
 app.controller('typographyController', [function() {
 
 }]);
-
-// $locationProvider.html5Mode(true);
 
 });
 

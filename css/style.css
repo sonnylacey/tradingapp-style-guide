@@ -110,6 +110,8 @@ ul.sub-submenu a.active { font-weight: bold; text-shadow: none; }
 
 .btn-html { margin-left: 75px; }
 
+img { margin: 5px 0 10px 0; }
+
 .fade, .navbar-inverse .brand, .btn-easy-language, .btn-html { opacity: 1; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
 
 .fade:hover, .navbar-inverse .brand:hover, .btn-easy-language:hover, .btn-html:hover { opacity: 0.8; }

@@ -1,5 +1,57 @@
-<h1>Controls</h1>
+<h1>Controls and the ContextMenu</h1>
 
+<p>Controls are user interface elements that are added to a WinForm and are used to allow users to perform various actions, as well as to present information to users.  Controls can be manually created from their respective classes, and their properties and events individually coded, or the can be visually added to a WinForm using the TradeStation Development Environment’s Form Designer, where they can be easily resized and moved to their appropriate location.  Following are the controls currently available to TradingApps.</p>
+
+<h3>Chart</h3>
+
+<img src="img/winforms/chart.png">
+</br>
+</br>
+<p>The Chart control allows you to display one or more data series using a variety of 2D and 3D styles.  The following chart types are available:</p>
+
+<ul>
+	<li>Area</li>
+	<li>Bar</li>
+	<li>BoxPlot</li>
+	<li>Bubble</li>
+	<li>CandleStick</li>
+	<li>Column</li>
+	<li>Doughnut</li>
+	<li>ErrorBar</li>
+	<li>FastLine</li>
+	<li>FastPoint</li>
+	<li>Funnel</li>
+	<li>Kagi</li>
+	<li>Line</li>
+	<li>Pie</li>
+	<li>Point</li>
+	<li>PointAndFigure</li>
+	<li>Polar</li>
+	<li>Pyramid</li>
+	<li>Radar</li>
+	<li>Range</li>
+	<li>RangeBar</li>
+	<li>RangeColumn</li>
+	<li>Renko</li>
+	<li>Spline</li>
+	<li>SplineArea</li>
+	<li>SplineAngle</li>
+	<li>StackedArea</li>
+	<li>StackedArea100</li>
+	<li>StackedBar</li>
+	<li>StackedBar100</li>
+	<li>StackedColumn</li>
+	<li>StackedColumn100</li>
+	<li>StepLine</li>
+	<li>Stock</li>
+	<li>ThreeLineBreak</li>
+</ul>
+
+
+
+<p>
+To utilize the Chart control, you create it and add it to a form as with any other control.  Additionally, you will need to create one or more ChartAreas to define the areas where plotting will take place.  You will also need to create one or more ChartSeries, which defines the data to be displayed in the ChartArea.  Optionally, axes and legends can be added.
+</p>
 
 <h3>Button</h3>
  
@@ -56,31 +108,45 @@ To utilize the Chart control, you create it and add it to a form as with any oth
 This control is based on the TradeStation Chart Analysis window, and offers a convenient way to display time series data.</p>
 
 <h3>CheckBox</h3>
+
+<img src="img/winforms/checkbox.png">
  
 <p>Checkboxes allows users to select an option, and maintain a binary state of either on (checked) or off (unchecked).</p>
 
 <h3>ComboBox</h3>
+
+<img src="img/winforms/combobox.png">
  
 <p>Presents a list of items from which users can select.  Clicking on the down arrow will display the list of items.</p>
 
 <h3>DataGridView</h3>
- 
-<p>The DataGridView control allows you to display data in a tabular format.</p>  <this is one of the most important controls, let’s highlight with several examples>
-Advanced functionality such as sorting is provided. 
+
+<img src="img/winforms/DataGridView.png">
+
+<p>The DataGridView control allows you to display data in a tabular format.</p> 
+<p>Advanced functionality such as sorting is provided.</p>
 
 <h3>DateTimePicker</h3>
+
+<img src="img/winforms/DateTimePicker.png">
  
 <p>The DateTimePicker will display a calendar control allowing users to select a date and/or time.  Clicking on the down arrow displays a calendar, from which a single or range of dates can be selected.</p>
 
 <h3>GroupBox</h3>
- 
-<p>This control is provides a frame where related controls can be grouped.  A name can optionally be supplied to further identify the controls in the group.</p>
 
-<h3>Label<h3>
+<img src="img/winforms/groupbox.png">
+ 
+<p>This control is provides a frame where related controls can be grouped. A name can optionally be supplied to further identify the controls in the group.</p>
+
+<h3>Label</h3>
+
+<img src="img/winforms/label.png">
  
 <p>A label control is used to display a non-editable text string in a form.</p>
 
 <h3>LinkLabel</h3>
+
+<img src="img/winforms/linklabel.png">
  
 <p>This control displays a hyperlink, which a user can click to perform an action such as opening a web page.<p>
 

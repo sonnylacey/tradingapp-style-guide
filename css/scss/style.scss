@@ -337,7 +337,9 @@ nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.w-in
 	@extend .fade;
 }
 
-
+img {
+	margin: 5px 0 10px 0;
+}
 
 // Animations
 
