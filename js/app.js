@@ -14,6 +14,48 @@ app.config(function ($routeProvider) {
         controller: 'typographyController'
       })    
 
+      .when('/winforms/', {
+        templateUrl: 'views/winforms.html',
+        controller: 'typographyController'
+      })
+
+      .when('/winforms/common-dialogs', {
+        templateUrl: 'views/winforms/common-dialogs.html',
+        controller: 'typographyController'
+      })
+
+
+      .when('/winforms/controls', {
+        templateUrl: 'views/winforms/controls.html',
+        controller: 'typographyController'
+      })
+
+
+      .when('/winforms/introduction', {
+        templateUrl: 'views/winforms/introduction.html',
+        controller: 'typographyController'
+      })
+
+      .when('/winforms/main-winform', {
+        templateUrl: 'views/winforms/main-winform.html',
+        controller: 'typographyController'
+      })
+
+      .when('/winforms/providers', {
+        templateUrl: 'views/winforms/providers.html',
+        controller: 'typographyController'
+      })
+
+      .when('/winforms/ui-design', {
+        templateUrl: 'views/winforms/ui-design.html',
+        controller: 'typographyController'
+      })
+
+      .when('/winforms/workflow', {
+        templateUrl: 'views/winforms/workflow.html',
+        controller: 'typographyController'
+      })
+
       .when('/html', {
         templateUrl: 'views/html.html',
         controller: 'typographyController'
@@ -61,11 +103,6 @@ app.config(function ($routeProvider) {
 
       .when('/html/tools', {
         templateUrl: 'views/html/tools.html',
-        controller: 'typographyController'
-      })
-
-      .when('/winforms/', {
-        templateUrl: 'views/winforms.html',
         controller: 'typographyController'
       })
 

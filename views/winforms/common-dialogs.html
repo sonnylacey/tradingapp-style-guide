@@ -1,0 +1,36 @@
+<h1>Common dialogs and auxiliary forms</h1>
+
+<p>
+TradingApps can create and display additional WinForms that allow users to submit information and/or to make users aware of important notifications.</p>
+
+<h3>Common Dialogs</h3>
+
+<p>
+Common dialogs are WinForms provided by the EasyLanguage Class Library that allow users to perform commonly used tasks such as selecting a symbol list, or choosing a file, and require a minimal amount of coding.  By removing the burden of coding these dialogs, developers can focus on more important implementation details, and users benefit from a consistent UI across different TradingApps.</p>
+
+<h3>SymbolListDialog</h3>
+	 
+
+<p>This class provides a convenient way to access the symbols in a user defined or TradeStation symbol list.  This can be a very useful tool as many types of TradingApps require a list or symbols to evaluate.</p>
+
+<h3>OpenFileDialog</h3>
+ 
+
+<p>Provides a convenient way to display a common interface to browse and select files that will be used by a TradingApp.</p>
+
+<h3>SaveFileDialog</h3>
+ 
+<p>This common dialog is similar to the OpenFileDialog, but customized for allowing users to save a given file.</p>
+
+<h3>Configuration dialogs</h3>
+ 
+<p>In general, analysis technique inputs provide a sufficient means for users to customize a TradingApp.  However, when there are a large number of items that can be customized, or when the items fall into different groups, it may be preferable to provide additional dialogs to help present the options in a meaningful way.</p>
+
+<p>These popup dialogs can be created ahead of time or on the fly.  They are displayed when a user seeks to change a setting, or then the TradingApp requires additional information, and should be dismissed once they are no longer needed.</p>
+
+<h3>Message dialogs</h3>
+
+<p>Feedback should generally be given to a user directly through the TradingApp’s UI.  However, when circumstances arrive that require immediate attention, or when a large amount of text needs to be presented, it is advisable to create a popup dialog.   The user should be able to dismiss the message dialog once the message has been read.</p>
+
+<use sample from charttrading send failed, and show code to create> 	
+
