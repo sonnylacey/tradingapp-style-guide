@@ -1,0 +1,39 @@
+<h1>Providers</h1>
+
+<p>Controls provide the means for users to interact with TradingApps.  Providers are the mechanisms by which TradingApps interact with the TradeStation Platform’s server-side services.  Almost all WinForm based TradingApps will require at least one provider.</p>
+
+<p>As the name implies, Providers offer TradingApps access to various types of data.  For each type of data there exists an associated provider where the configuration is supplied, data is requested, retrieved data stored, and notifications of update sent.  Providers may be manually added and configured, or can be added from the TDE’s Toolbox and configured using the Properties Editor.  The data is obtained either asynchronously, by handling the common Updated event, or synchronously, by simply accessing the data.</p>
+
+<h3>AccountsProvider</h3>
+
+<p>Gives access to account information such as the values shown in the TradeManager’s Balances tab.</p>
+
+<h3>FundamentalQuotesProvider</h3>
+<p>This provider is used to access to fundamental data such as earnings and dividend information.</p>
+
+<h3>MarketDepthProvider</h3>
+<p>Give access to real-time Level 2 data.</p>
+
+<h3>NewsProvider</h3>
+<p>This provider allows developers to programmatically access headlines and stories from any of the news content providers available in the TradeStation Platform to which the user is subscribed.</p>
+
+<h3>OrdersProvider</h3>
+<p>The OrdersProvider allows TradingApps to access real-time and historical orders, such as those shown in the TradeManager’s Orders tab.</p>
+
+<h3>PositionsProvider</h3>
+<p>Gives access to real-time position information, such as those shown in the TradeManager’s Positions tab.</p>
+
+<h3>PriceSeriesProvider</h3>
+<p>This provider is used to access historical and real-time bar data.</p>
+
+<h3>QuotesProvider</h3>
+<p>Gives access to real-time quote fields such as bid, ask, and last.</p>
+
+<h3>RSSProvider</h3>
+<p>The RSSProvider allows developers to programmatically access information, such as blog entries, headlines, and other types of data, that are published using the Rich Site Summary (also known as Really Simple Syndication, or RSS for short) format.</p>
+
+<h3>SymbolAttributesProvider</h3>
+<p>This provider gives ad-hoc access to symbol information such as its point value, minimum move, and price scale.</p>
+
+<h3>TimeAndSalesProvider</h3>
+<p>The TimeAndSalesProvider gives developers programmatic access to the TradeStation Data Network’s Time & Sales data.</p> 

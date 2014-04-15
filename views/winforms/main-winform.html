@@ -1,0 +1,20 @@
+<h1>Main WinForm</h1>
+
+<p>The foundation of a TradingApp is the EasyLanguage WinForm class.  Whether EasyLanguage-based, or HTML-based, all TradingApps start with the creation of a WinForm.  Users interact with TradingApps through controls and other UI elements contained in the main WinForm.</p>
+
+<h3>Initial size and type</h3>
+<p>Important decisions when creating a TradingApp include whether to allow its width and/or height to be changed, as well as what the initial size will be when first opened.  By default, TradingApps will be resizable and are given an initial size calculated by the TradeStation Platform.  This works well for TradingApps that adjust their contents as the window resizes, but may not be ideal for all TradingApps.</p>
+
+<p>You can override the default behavior by using a combination of events and properties exposed by the WinForm class, as described below.</p> 
+
+
+<h3>The Resize event</h3>
+<p>You have the opportunity to respond to changes in a TradineApp’s size by handling the WinForm’s Resize event.  This event is fired each time a TradingApp’s width and/or height changes.</p>
+
+<p>Enabling a TradingApp to respond to the Resize event can be done by manually creating the event handler method, and then assigning the method name to the WinForm’s Resize event, or by simply using the Properties editor, where the code will automatically be added.<p>
+
+<h3>MaximumSize and MinimumSize Properties</h3>
+
+<p>
+These properties allow you to establish the largest and smallest width and height that a TradingApp can be set to.  Assigning the same value to the MaximumSize’s Width property as the MinimumSize’s Width property will prevent the TradingApp’s width from changing.  Assigning the same value to the MaximumSize’s Height property and MinimumSize’s Height property will prevent the TradingApp’s height from changing.
+</p>

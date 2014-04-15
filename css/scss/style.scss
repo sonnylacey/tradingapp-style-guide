@@ -68,7 +68,14 @@
 	}
 
 	
+// Responsive Stuff 
 
+@media screen and (min-width: 900px) {
+	#pad-wrapper {
+		width: 850px;
+		margin-top: 42px;
+	}
+}
 
 
 // Type
@@ -78,8 +85,31 @@ h1, h2, h3, h4 {
 	margin-bottom: 20px;
 }
 
+h1 {
+	line-height: 1em;
+}
+
 .hero h1, p {
 	// color: #f9f9f9;
+}
+
+h2 {
+	font-size: 28px;
+	margin-top: 50px;
+}
+
+h3 {
+	font-size: 20px;
+	margin-top: 40px;
+	margin-bottom: 8px;
+}
+
+#pad-wrapper li {
+	font-size: 14px;
+}
+
+#dashboard-menu.li {
+//	font-size: 14px !important;
 }
 
 // Hero
@@ -208,7 +238,7 @@ li.active i.icon-chevron-down {
 }
 
 // To set active class color
-nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.h-devices .h-devices, nav.h-standards .h-standards, nav.h-branding .h-branding,  nav.h-grids .h-grids, nav.h-typography .h-typography, nav.h-colors .h-colors, nav.h-iconography .h-iconography, nav.h-templates .h-templates, nav.h-tools .h-tools,  nav.contact .contact, nav.winforms .winforms {
+nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.w-introduction .w-introduction, nav.w-main .w-main, nav.w-common .w-common, nav.w-controls .w-controls, nav.w-providers .w-providers, nav.w-ui .w-ui, nav.w-workflow .w-workflow, nav.h-devices .h-devices, nav.h-standards .h-standards, nav.h-branding .h-branding,  nav.h-grids .h-grids, nav.h-typography .h-typography, nav.h-colors .h-colors, nav.h-iconography .h-iconography, nav.h-templates .h-templates, nav.h-tools .h-tools,  nav.contact .contact, nav.winforms .winforms {
 	color: #33b5e5 !important;
 }
 
@@ -307,6 +337,9 @@ nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.h-de
 	@extend .fade;
 }
 
+img {
+	margin: 5px 0 10px 0;
+}
 
 // Animations
 

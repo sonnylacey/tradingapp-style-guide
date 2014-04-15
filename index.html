@@ -37,6 +37,10 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!-- AngularJS HTML5 Pushstate 
+    <base href="/">-->
+
 </head>
 
 <body ng-app="tsAppGuide">
@@ -91,56 +95,48 @@
                 </a>
             </li>
 
-             <li><a ng-click="active='winforms'" class="winforms" href="#/winforms">WinForms <!--<i class="icon-chevron-down"></i>--></a>
-                        <!--<ul class="sub-submenu">
+             <li><a ng-click="active='winforms'" class="sub-dropdown-toggle winforms" href="#/winforms">WinForms <i class="icon-chevron-down"></i></a>
+                        <ul class="sub-submenu">
                                 <li>
-                                    <a href="#/winforms">
-                                        <span>Standards</span> 
-                                    </a>
-                                </li>
-                                <!--
-                                <li>
-                                    <a href="#">
-                                        <span>Branding</span> 
+                                    <a ng-click="active='w-introduction'" class="w-introduction" href="#/winforms">
+                                        <span>Introduction</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span>Grids</span> 
+                                    <a ng-click="active='w-main'" class="w-main" href="#/winforms/main-winform">
+                                        <span>Main WinForm</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span>Typography</span> 
+                                    <a ng-click="active='w-common'" class="w-common" href="#/winforms/common-dialogs">
+                                        <span>Common Dialogs</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span>Colors</span> 
+                                    <a ng-click="active='w-controls'" class="w-controls" href="#/winforms/controls">
+                                        <span>Controls</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span>Iconography</span> 
+                                    <a ng-click="active='w-providers'" class="w-providers" href="#/winforms/providers">
+                                        <span>Providers</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span>Templates</span> 
+                                    <a ng-click="active='w-ui'" class="w-ui" href="#/winforms/ui-design">
+                                        <span>UI Design</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span>Tools</span> 
+                                    <a ng-click="active='w-workflow'" class="w-workflow" href="#/winforms/workflow">
+                                        <span>Workflow</span> 
                                     </a>
                                 </li>
-                                
                             </ul>
-                        -->
                     </li>
 
     
-   
+                    <!-- HTML Menu -->
                     <li>
                         <a ng-click="active='html'" class="sub-dropdown-toggle html" href="#/html">HTML<i class="icon-chevron-down"></i></a>
                             <ul class="sub-submenu">

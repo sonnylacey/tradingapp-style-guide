@@ -13,16 +13,9 @@
 
 @font-face { font-family: 'proxima_novalight_italic'; src: url("../font/proxima-nova/ProximaNova-LightIt-webfont.eot"); src: url("../font/proxima-nova/ProximaNova-LightIt-webfont.eot?#iefix") format("embedded-opentype"), url(".../font/proxima-nova/ProximaNova-LightIt-webfont.woff") format("woff"), url("../font/proxima-nova/ProximaNova-LightIt-webfont.ttf") format("truetype"), url("../font/proxima-nova/ProximaNova-LightIt-webfont.svg#proxima_novalight_italic") format("svg"); font-weight: normal; font-style: normal; }
 
-@media screen and (min-width: 900px) { #pad-wrapper { width: 850px; margin-top: 42px; } }
 h1, h2, h3, h4 { font-family: 'proxima_nova_rgbold', 'Open Sans', 'Arial'; margin-bottom: 20px; }
 
-h1 { line-height: 1em; }
-
-h2 { font-size: 28px; margin-top: 50px; }
-
-h3 { font-size: 20px; margin-top: 40px; margin-bottom: 8px; }
-
-#pad-wrapper li { font-size: 14px; }
+h3 { font-size: 20px; margin-top: 23px; margin-bottom: 2px; color: green !important; }
 
 .hero p { font-size: 18px; }
 
@@ -58,7 +51,7 @@ li.active i.icon-chevron-down { -ms-transform: rotate(0deg); -moz-transform: rot
 
 #dashboard-menu > li.active > a, #dashboard-menu > li > a:hover { text-decoration: none; }
 
-nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.w-introduction .w-introduction, nav.w-main .w-main, nav.w-common .w-common, nav.w-controls .w-controls, nav.w-providers .w-providers, nav.w-ui .w-ui, nav.w-workflow .w-workflow, nav.h-devices .h-devices, nav.h-standards .h-standards, nav.h-branding .h-branding, nav.h-grids .h-grids, nav.h-typography .h-typography, nav.h-colors .h-colors, nav.h-iconography .h-iconography, nav.h-templates .h-templates, nav.h-tools .h-tools, nav.contact .contact, nav.winforms .winforms { color: #33b5e5 !important; }
+nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.h-devices .h-devices, nav.h-standards .h-standards, nav.h-branding .h-branding, nav.h-grids .h-grids, nav.h-typography .h-typography, nav.h-colors .h-colors, nav.h-iconography .h-iconography, nav.h-templates .h-templates, nav.h-tools .h-tools, nav.contact .contact, nav.winforms .winforms { color: #33b5e5 !important; }
 
 #dashboard-menu ul.submenu { padding-left: 22px; }
 
@@ -109,8 +102,6 @@ ul.sub-submenu a.active { font-weight: bold; text-shadow: none; }
 .navbar-inverse .brand { margin-top: 8px; }
 
 .btn-html { margin-left: 75px; }
-
-img { margin: 5px 0 10px 0; }
 
 .fade, .navbar-inverse .brand, .btn-easy-language, .btn-html { opacity: 1; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
 

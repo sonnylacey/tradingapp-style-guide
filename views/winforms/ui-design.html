@@ -1,0 +1,150 @@
+<h1>UI Design</h1>
+
+<p>Consider implementing good aesthetics in the design of your application as they greatly influence the user’s experience. Spacing, font consistency and use of color can play a big role in an user’s learning and daily use of your application.</p>
+
+<h3>General</h3>
+
+<ul>
+	<li>Avoid redundant text or large blocks of text in your UI</li>
+<li>Use the appropriate controls for a specific action</li>
+<li>Consider a clean layout focused on task accomplishment</li>
+<li>Avoid aesthetic decorative elements that are not linked with task accomplishment</li>
+</ul>
+
+<h3>Labels & Instructions</h3>
+
+<ul>
+<li>Avoid ambiguity on labels or buttons by using precise commands</li>
+<li>Bad: Yes, No.  Good:  Sell, Cancel</li>
+<li>Use natural language to provide instruction, avoiding complicated & esoteric terms</li>
+<li>Use verbs when the user’s input is required</li>
+<li>Bad: Selected Quantity,  Good: Select Quantity</li>
+</ul>
+
+<h3>Spacing, Grouping & Flow</h3>
+
+<ul>
+<li>Group and associate similar elements into logical groups. For example, try to group all your inputs on top, so that the user can at a glance, know the status of your application. Then group actions (buttons) together so that the user doesn’t have to hunt around the screen to know where to focus when making a decision</li>
+<li>Try to keep reasonable separation between groups and/or elements to allow the user to focus. The more separation there is between an important element and the rest of the interface will only help to bring the user’s attention to it</li>
+<li>Make sure your application follows some kind of logical flow by presenting elements in a sequential manner. For example: 1) Lot selection 2) Lot Review 3) Order Placement</li>
+</ul>
+
+<h3>Color</h3>
+
+<ul>
+<li>Use color sparingly, applying it only when wanting to call attention to an important element such as a tick change, action button, etc.</li>
+<li>Avoid using colors associated with trading such as Green and Red, unless they are directly applicable</li>
+</ul>
+
+
+<p>Use color primarily for emphasis. Choose colors that fit with your brand and provide good contrast between visual components. Note that red and green may be indistinguishable to color-blind users.</p>
+
+<h3>Text Size & Typography</h3>
+
+<ul>
+<li>Consider the size of your fonts for consistency. For example, have all your headings be 18px, sub-headings 14px, and so forth</li>
+<li>Consider that the optimal reading text size on a standard resolution monitor is 16px. However, this might prove to big for data grids or small buttons, so use your own judgment and consider that anything below 9px will basically be unreadable</li>
+</ul>
+
+<h3>Error Handling</h3>
+
+<ul>
+<li>Inform the user of what happened in simple terms</li>
+<li>Strive to provide the user with actions to resolve the issue before suggesting support, such as restarting the application for example</li>
+<li>Provide links to support forums or FAQs only as additional information to the previous recommendations
+First Time and Help</li>
+</ul>
+
+<p>You should strive to create TradingApps that can be used with little or no instruction, but for some features this is not always possible.  For these cases, it is advisable to incorporate a First Time dialog and help links into your product.</p>
+
+
+<h3>First Time User</h3>
+<p>If your TradingApp contains hidden functionality, a First Time dialog can be displayed to offer basic instructions.  The ChartTrading indicator, for instance, displays such a dialog to explain various key combinations used to place trades.  After a brief explanation of the TradingApp, clear and concise explanations of the hidden functionality should be displayed.  It is recommended that the bottom right contain a LinkLabel with the text “Learn More” that a user can click to obtain more detailed information.  This dialog should also have a “Don’t display again” CheckBox that a user can select once there is no longer a need for instruction.</p>
+<Let’s discuss making this a common dialog>
+
+ 
+
+<h3>Help Link</h3>
+<p>TradingApps can offer a link to additional help information by adding a Help LinkLabel.  The preferred placement is the lower right of the TradingApp’s main form.</p>
+
+<h3>Logging in</h3>
+<p>Displaying a login screen in addition to the TradeStation Platform’s initial Network Logon is strongly discouraged.</p> 
+
+<h3>Interaction with other TradingApps</h3>
+
+<h3>Symbol and interval linking</h3>
+
+<p>TradingApps, by default, support linking through the EasyLanguage Symbol keyword only.  If a TradingApp is symbol linked to another application in the platform, when the other window changes its symbol, the linked TradingApp will recalculate and the Symbol keyword will reflect the new symbol.  If a TradingApp is active, and its default symbol is changed through the command bar, the TradingApp will recalculate, as will any other symbol  linked applications.<p>
+
+<p>This default behavior works well for TradingApps that analyze a single symbol, but not for cases where multiple symbols are displayed.  For these cases, you should utilize the SymbolLinking class to make other applications aware of which symbol you want to change.<p>
+
+<h3>Sharing data between applications</h3>
+<p>The EasyLanguage Class Library provides classes to facilitate the exchange of information between TradingApp’s, or between a TradingApp and other windows that host EasyLanguage analysis technique, such as Charting or Radascreen.</p>
+
+<h3>GlobalDictionary</h3>
+<p>This collection class allows you to store data as a key/value pair that can be accessed from an external analysis technique.  Additionally, events are exposed to make applications aware of changes to the dictionary, such as when an item is added, changed, or deleted.</p> 
+
+<h3>Interaction with the platform</h3>
+<p>Disable checkbox to prevent accidental trading
+TradingApps that offer order execution functionality are advised to include a Disable CheckBox as shown in the following image.</p>  
+ 
+<p>This feature is intended to prevent unwanted trade actions from taking place when a trader is away from the platform, or otherwise concerned that unintended trading may occur.<p>
+
+<p>The preferred placement is to the lower left of the TradingApps form.<p>
+
+<h3>Alerts</h3>
+<p>
+As with other analysis techniques, TradingApps offer the ability to generate alerts to notify a user when an event of significance occurs.  These events will appear as a popup window on the user’s desktop, and are collected and shown in the Alerts tab of the Platform’s Message Center window as in the example images shown below.</p>
+
+<p>Alerts are configured in the Alerts tab of the TradingApp’s Format dialog as shown below.</p>
+ 
+
+<p>Note that in TradingApps, bar-based alerting is not possible.<p>
+
+<p>	
+Alerts are triggered when the Alert keyword has been executed in the EasyLanguage code.  The Alert keyword can take either one or two inputs.  If only one input is supplied, the symbol corresponding to the Symbol keyword in the TradingApp will be displayed in the Alert popup and the Message Center.  When two inputs are supplied, the string passed as the second input will be shown in place of the symbol.  If the alert is not symbol specific, it is advisable to pass an empty string as the second parameter.</p>
+
+<h3>Persisting data between sessions</h3>
+<p>
+Users will expect that changes they make to a TradingApp will be maintained when the workspace it resides in is saved, closed, and the reopened at a later time.   Persisting data can be accomplished in two ways, through the use of the EasyLanguage Class Library’s AppStorage class, or through the use of additional TradingApp created  files.</p>
+
+<h3>AppStorage</h3>
+<p>AppStorage is a property of an analysis technique and is derived from the Dictionary collection class.  Data is stored using key/value pairs.  To use AppStorage, most applications will read previously stored values during the TradingApp’s Initialized event.  If no value exists, as may be the case the first time a TradingApp is opened, the dictionary entry should be created and initialized.  Saving is done either by writing to AppStorage at the time the value changes, or during the TradingApps WorkspaceSaving event.</p> 
+<p>Note that when different instances of the same TradingApp are opened, each instance will contain its own AppStorage.</p>
+
+<h3>Additional files</h3>
+<p>There are times when multiple instances of the same TradingApp will need to save shared data between sessions.  First Time dialogs, for instance, are no longer required once the “Don’t Show Again” CheckBox has been checked.  To make all future instances of the TradingApp aware of this, you can store the CheckBox’s state in a settings file.</p>
+
+<p>The EasyLanguage Class Library contains StreamReader and StreamWriter classes, as well as XML classes that can be used to create files, and save and retrieve data from them.  It is recommended you store these files in the MyWork folder to ensure that they will be part of the Platform’s Backup and Restore processes.</p> 
+
+<h3>Accessing the Print Log</h3>
+<p>The EasyLanguage Print keyword functions the same in TradingApps as with other analysis techniques.  When using the Platform’s Print Log window, bear in mind that is a shared between all instances of running analysis techniques, and it is advisable to not rely on it for communicating important information to users.  When it is necessary to include Print, it is recommended to prefix the output string with the name of the TradingApp, which can be retrieved using the Name keyword.</p>
+
+<h3>Using RunCommand to execute macros</h3>
+<p>Macros can be executed from TradingApps.  Unlike other analysis techniques, macros executing in TradingApps using the RunCommand keyword or RunCommandOnLastBar function, do not require the user enable the macro in the TradingApps Format dialog.  It is important to note that several macros act on the currently active window, and may not be appropriate to be executed from a TradingApp.</p> 
+
+<h3>Making your products ready for international markets</h3>
+<p>The TradeStation Platform is now available in a number of languages through several international partners, and users of those versions will expect TradingApps to support their language and color preferences.  We’ve done our best to make it easy for you to localize your TradingApps with String and Color tables, along with a glossary of common trading and platform terms.   Taking the time to localize your TradingApp will allow you to reach the largest possible audience of TradeStation users.</p>
+
+<h3>TDE StringTable</h3>
+<p>All analysis techniques now include a string table, which can be accessed from the TradeStation Development Environment.  Localizing your strings is a straightforward process.  For each string you display, you simply create a new row in the string table and supply a key name, a default string value, and the actual string to be shown for each supported language, such as English, Japanese or Chinese Traditional.  To use the string in your code, you supply the key name prefixed with an exclamation mark.  During run-time, the TradeStation Platform will replace the key with the string for the appropriate language.</p>
+
+<p>We’ve also included a few default keys to let you localize some of the TradingApp properties such as the name, as well as added a new attribute to allow input names to be localized.</p>
+
+<h3>ColorTable</h3>
+<p>The interpretation of colors can vary from region to region, or even between different partners in the same region.  We’ve added a ColorTable to help you display the appropriate colors from your TradingApp.</p>
+
+<h3>The Partner Class</h3>
+<p>Some international partners may not offer the full range of server-side services.  Additionally, partners in the same country or region may use the same language, but have different preferences with respect to color and terminology.  To help developers customize their TradingApps to work well with all TradeStation partners, the EasyLanguage Class Library exposes the Partner class.</p> 
+
+<h3>The ID Property</h3>
+<p>Each TradeStation partner is assigned a unique ID</p>
+
+<h3>The PrimaryLanguageID Property</h3>
+<p>Identifies the primary language used by clients of the partner.</p> 
+
+<h3>The SubLanguageID Property</h3>
+<p>Identified the sub-language used by clients of the partner.</p>
+
+<h3>Displaying data from sources other than the TradeStation Data Network</h3>
+<p>There are cases where is it necessary to display data from sources other than TradeStation.  It is up to you to ensure the data can legally be distributed and is free of any restrictions.  TradingApps that display data from a third party data source, where the data of the same type is available through the TradeStation Data Network, will be rejected.</p>
